@@ -52,6 +52,16 @@ activate :livereload
 set :css_dir, 'stylesheets'
 set :js_dir, 'javascripts'
 set :images_dir, 'images'
+
+helpers do
+  def header(data)
+    links = data.header.navigation
+    logo  = data.header.logo
+
+    partial("header", :locals => {:logo => logo,:links => links})
+  end
+end
+
 # set :js_assets_paths, ["#{root}/source/vendor"]
 
 # Build-specific configuration

@@ -1,6 +1,5 @@
 @import 'compass';
-@import 'bootstrap'; 
-@import 'bootstrap-responsive';
+@import "susy";
 
 $about-size: 4;
 $about-offset: 0;
@@ -25,6 +24,7 @@ img#background{
   left: 0;
   z-index: -999;
 }
+
 
 #header {
   @include opacity($header-opacity);
@@ -59,9 +59,9 @@ img#background{
 }
 
 aside#about{
-  @include makeColumn($about-size, $about-offset);
+  // @include makeColumn($about-size, $about-offset);
 
-  background-color: $white;
+  // background-color: $white;
   border-color: rgba(122, 112, 112, 0.55);
   min-height: 200px;
   padding: 10px;

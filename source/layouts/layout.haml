@@ -18,15 +18,9 @@
   %body
     %img#background{ :src => "#{data.body.background_image}"}
 
-    #header.navbar.navbar-fluid-top
-      .logo.pull-left
-        %a.brand(href="#")= data.header.logo
-      .navbar-inner
-        .container-fluid
-          %ul.nav.pull-right
-            - data.header.navigation.each do |nav|
-              %li= link_to nav.name, "/path1"
 
+    = header(data)
+    
     #body.container-fluid
       .row-fluid
         .span12
