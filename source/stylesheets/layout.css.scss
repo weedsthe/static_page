@@ -1,0 +1,30 @@
+// Tylko i wyłącznie pozycjonowanie elementów na stronie(layout)
+
+@import 'variables';
+
+// Variables
+
+$nav-height:60px;
+$about-size: 4;
+$about-offset: 0;
+
+// Struktura
+
+body {
+  padding-top:$nav-height;
+  height:100%;
+}
+
+article {
+  @include span-columns(12);
+}
+
+aside {
+  @include span-columns(4);
+}
+
+#header {
+  position:fixed;
+  top:$nav-height;
+  width:100%;
+}
