@@ -1,5 +1,4 @@
-.navbar-inner
-  .container-fluid
-    %ul.nav.pull-right
-      - links.each do |link|
-        %li= link_to link.name, "/path1"
+%nav
+  %ul
+    - links.each do |link|
+      %li= link_to link.name, "/path1"

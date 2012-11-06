@@ -21,10 +21,8 @@
 
     = header(data)
     
-    #body.container-fluid
-      .row-fluid
-        .span12
-          = yield
+    %article#content
+      = yield
   /
     Javascripts
     \==================================================

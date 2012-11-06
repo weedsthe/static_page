@@ -1,8 +1,7 @@
-#header.navbar
+#header
   .logo
-    %a.brand(href="#")= logo
-  .navbar-inner
-    .container-fluid
-      %ul.nav
-        - links.each do |link|
-          %li= link_to link.name, "/path1"
+    %a(href="#")= logo
+  %nav
+    %ul
+      - links.each do |link|
+        %li= link_to link.name, "/path1"

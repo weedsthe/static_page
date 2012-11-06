@@ -1,9 +1,8 @@
 @import 'compass';
-@import "susy";
-
-$about-size: 4;
-$about-offset: 0;
-$header-opacity: 0.8;
+@import 'compass/reset';
+@import 'susy';
+@import 'layout';
+@import 'variables';
 
 @mixin about-css{
 }
@@ -52,10 +51,6 @@ img#background{
   &:hover {
     color: gray;
   }  
-}
-
-#body{
-  padding: 30px;
 }
 
 aside#about{
