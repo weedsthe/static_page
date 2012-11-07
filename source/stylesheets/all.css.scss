@@ -3,6 +3,7 @@
 @import 'susy';
 @import 'layout';
 @import 'variables';
+@import 'fonts';
 
 #header {
   @include opacity($header-opacity);

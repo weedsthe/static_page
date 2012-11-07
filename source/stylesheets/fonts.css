@@ -1,0 +1,47 @@
+/*Angelina*/
+
+@font-face {
+  font-family:"Angelina";
+  src: url('fonts/calligraphic/angelina.ttf')
+  format('truetype')
+}
+
+/*Windsong*/
+
+@font-face {
+  font-family:"Windsong";
+  src: url('fonts/calligraphic/Windsong.ttf')
+  format('truetype')
+}
+
+/*Daniel*/
+
+@font-face {
+  font-family:"Daniel";
+  src: url('fonts/calligraphic/daniel.ttf')
+  format('truetype')
+}
+
+/*Journal*/
+
+@font-face {
+  font-family:"Journal";
+  src: url('fonts/calligraphic/journal.ttf')
+  format('truetype')
+}
+
+/*Tangerine*/
+
+@font-face {
+  font-family:"Tangerine";
+  src: url('fonts/calligraphic/Tangerine_Regular.ttf')
+  format('truetype')
+}
+
+/*Alex*/
+
+@font-face {
+  font-family:"Alex";
+  src: url('fonts/calligraphic/AlexBrush-Regular-OTF.otf')
+  format('opentype')
+}
