@@ -67,7 +67,7 @@ img#background{
 
 #header {
   width:99%;
-  border-bottom:1px solid lighten($logo-color, 60%);
+  border-bottom:1px solid rgba(50,50,50,0.25);
   
   @if $header-type == fixed { @include fixed(top, 0); }
   height: $header-height;
@@ -77,7 +77,7 @@ img#background{
     @include span-columns($logo-size);
     padding: $logo-padding;
   }
-  
+
   nav {
     height: $nav-height - 1 * $nav-padding;
     padding: $nav-padding;
