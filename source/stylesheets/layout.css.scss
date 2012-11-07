@@ -32,7 +32,7 @@ $content-size: 12;
 
 $about-size: 4;
 $about-height: 200px;
-$about-padding: 0;
+$about-padding: 10px;
 
 // Struktura
 
@@ -105,7 +105,7 @@ img#background{
   }
 }
 
-article#content{
+#content{
   // dodaje wymagany odstep wielkosc headera
   @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
 

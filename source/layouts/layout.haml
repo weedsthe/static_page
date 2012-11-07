@@ -18,10 +18,9 @@
   %body
     %img#background{ :src => "#{data.body.background_image}"}
 
-
     = header(data)
     
-    %article#content
+    #content
       = yield
   /
     Javascripts
