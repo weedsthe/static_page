@@ -1,17 +1,41 @@
-// Tylko i wyłącznie pozycjonowanie elementów na stronie(layout)
+/* Konwencja
+  Ten plik zawiera opis pozycji elementow na stronie
+
+  @dozowlone atrybuty css:
+    - padding, margin, height, position, top
+
+  @dozwolone mixiny:
+    - kazdy ktory wykorzystuje dozwolone atrybuty oraz
+    - span-columns
+
+  @slownik:
+    size: to samo co span
+*/
 
 @import 'variables';
 
 // Variables
+$header-type: fixed;
+$header-padding: 10px;
+$header-height: 50px;
+$header-size: 12;
 
-$nav-height:60px;
-$about-size: 4;
-$about-offset: 0;
+$logo-size: 4;
+
+$nav-height: $header-height;
+$nav-size: 8;
+
+$content-padding: 0;
 
 // Struktura
 
+@mixin fixed($top, $height: 0) {
+  position: fixed;
+  top: $top;
+  height: $height;
+}
+
 body {
-  padding-top:$nav-height;
   height:100%;
 }
 
@@ -24,7 +48,33 @@ aside {
 }
 
 #header {
-  position:fixed;
-  top:$nav-height;
-  width:100%;
+  @include span-columns($header-size);
+
+  @if $header-type == fixed { @include fixed(0, $header-height); }
+  padding: $header-padding;
+}
+
+#header .logo {
+  @include span-columns($logo-size);
+}
+
+#header nav {
+  // jak sobie odkomentujesz to wyzej zobaczysz ze nav sie uklada dobrze ale ul wystaje za ekran
+  // @include span-columns($nav-size, omega);
+  
+  @include span-columns($nav-size);
+
+  ul { 
+    @include horizontal-list;
+    @include float-right;
+
+    height: $nav-height;
+  }
+}
+
+article#content{
+  // dodaje wymagany odstep wielkosc headera
+  @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
+
+  padding: $content-padding;
 }
