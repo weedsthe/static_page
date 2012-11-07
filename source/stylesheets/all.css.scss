@@ -1,24 +1,50 @@
 @import 'compass';
-@import 'compass/reset';
 @import 'susy';
 @import 'layout';
 @import 'variables';
 @import 'fonts';
 
+//Mixins
+
+@mixin font($font-name) {
+  font-family:$font-name, sans-serif, Arial;
+}
+
+@mixin font-size($font-size) {
+  font-size: $font-size;
+}
+
+@mixin font-color($font-color) {
+  color: $font-color;
+}
+
+// Default stylesheet
+
 #header {
   @include opacity($header-opacity);
-
   background-color: $header-color;
+
+  nav a{
+    text-shadow: none;
+
+    &:hover {
+      color: gray;
+    }  
+  }
 }
 
-#header nav a{
-  text-shadow: none;
+.logo {
+  @include font($logo-font);
+  @include font-size($logo-font-size);
+  
+  a {
+    @include font-color($logo-color);
 
-  &:hover {
-    color: gray;
-  }  
+    text-decoration:none;
+  }
 }
 
-aside#about{
+
+#about{
   background-color: $about-color;
 }

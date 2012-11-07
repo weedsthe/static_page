@@ -1,6 +1,15 @@
 // zmienne od wyglądu strony(kolory itd.)
 
+// Kolory:
+$white:#fff;
+
+// Czcionka:;
+$logo-font: "Daniel";
+$logo-font-size: 20px;
+$logo-color: #252525;
+
+
 $header-opacity: 0.8;
 $header-color: rgba(255,255,255,0.75);
 
-$about-color: #fff;
+$about-color: $white;
