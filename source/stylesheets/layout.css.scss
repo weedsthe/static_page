@@ -66,12 +66,18 @@ img#background{
 }
 
 #header {
+  width:99%;
+  border-bottom:1px solid lighten($logo-color, 60%);
   
   @if $header-type == fixed { @include fixed(top, 0); }
   height: $header-height;
   padding: $header-padding;
-  width:99%;
-
+  
+  .logo {
+    @include span-columns($logo-size);
+    padding: $logo-padding;
+  }
+  
   nav {
     height: $nav-height - 1 * $nav-padding;
     padding: $nav-padding;
@@ -96,10 +102,6 @@ img#background{
         }
       }
     }
-  }
-  .logo {
-    @include span-columns($logo-size);
-    padding: $logo-padding;
   }
 }
 
