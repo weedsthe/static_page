@@ -91,12 +91,15 @@ img#background{
       li {
         @include float-left;
         width: $nav-item-width;
+        text-align:center;
 
         a {
-          text-decoration:none;
+          border-left:4px solid rgba(255,255,255,0);
           color: $nav-item-color;
-
+          padding:2px;
+          text-decoration:none;
           &:hover {
+            border-left:4px solid $nav-item-highlight-color;
             color: $nav-item-hover-color;
           }
         }
@@ -105,16 +108,16 @@ img#background{
   }
 }
 
-#content{
-  // dodaje wymagany odstep wielkosc headera
-  @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
-
-  padding: $content-padding;
-}
-
 aside#about {
   @include span-columns($about-size);
 
   min-height: $about-height;
   padding: $about-padding;
+}
+
+#content{
+  // dodaje wymagany odstep wielkosc headera
+  @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
+
+  padding: $content-padding;
 }
