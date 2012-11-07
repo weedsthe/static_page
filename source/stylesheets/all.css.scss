@@ -6,16 +6,9 @@
 
 //Mixins
 
-@mixin font($font-name) {
+@mixin font($font-name, $space) {
   font-family:$font-name, sans-serif, Arial;
-}
-
-@mixin font-size($font-size) {
-  font-size: $font-size;
-}
-
-@mixin font-color($font-color) {
-  color: $font-color;
+  letter-spacing: $space;
 }
 
 // Default stylesheet
@@ -34,12 +27,11 @@
 }
 
 .logo {
-  @include font($logo-font);
-  @include font-size($logo-font-size);
+  @include font($logo-font, $logo-spacing);
+  font-size: $logo-font-size;
   
   a {
-    @include font-color($logo-color);
-
+    color: $logo-color;
     text-decoration:none;
   }
 }

@@ -1,15 +1,26 @@
-// zmienne od wyglądu strony(kolory itd.)
+// ### Zmienne od wyglądu strony(kolory itd.) ###
 
 // Kolory:
 $white:#fff;
 
-// Czcionka:;
+
+// Header:
+
+$header-color: rgba(255,255,255,0.75);
+$header-opacity: 0.8;
+
+// Logo:
+
+$logo-color: #252525;
 $logo-font: "Daniel";
 $logo-font-size: 20px;
-$logo-color: #252525;
+$logo-spacing:0px;
 
+// Navigation:
 
-$header-opacity: 0.8;
-$header-color: rgba(255,255,255,0.75);
+$nav-item-color: lighten(#252525, 5%);
+$nav-item-hover-color: lighten($nav-item-color, 20%);
+
+// Aside:
 
 $about-color: $white;

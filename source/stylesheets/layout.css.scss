@@ -1,8 +1,8 @@
 /* Konwencja
   Ten plik zawiera opis pozycji elementow na stronie
 
-  @dozowlone atrybuty css:
-    - padding, margin, height, position, top
+  @dozwolone atrybuty css:
+    - box-sizing, float, height, margin, padding , position, width
 
   @dozwolone mixiny:
     - kazdy ktory wykorzystuje dozwolone atrybuty oraz
@@ -21,9 +21,11 @@ $header-height: 50px;
 $header-size: 12;
 
 $logo-size: 4;
+$logo-padding:15px;
 
 $nav-height: $header-height;
-$nav-size: 8;
+$nav-padding: 15px;
+$nav-item-width:80px;
 
 $content-padding: 10px;
 $content-size: 12;
@@ -34,14 +36,16 @@ $about-padding: 0;
 
 // Struktura
 
-@mixin fixed($top, $height: 0) {
+@mixin fixed($position, $offset) {
   position: fixed;
-  top: $top;
-  height: $height;
+  #{$position}: $offset;
 }
 
 body {
   height:100%;
+  margin:0;
+  position:absolute;
+  overflow:auto;
 }
 
 /* http://css-tricks.com/perfect-full-page-background-image/ */
@@ -62,33 +66,44 @@ img#background{
 }
 
 #header {
-  @include span-columns($header-size);
-
-  @if $header-type == fixed { @include fixed(0, $header-height); }
-  padding: $header-padding;
-}
-
-#header .logo {
-  @include span-columns($logo-size);
-}
-
-#header nav {
-  // jak sobie odkomentujesz to wyzej zobaczysz ze nav sie uklada dobrze ale ul wystaje za ekran
-  // @include span-columns($nav-size, omega);
   
-  @include span-columns($nav-size);
+  @if $header-type == fixed { @include fixed(top, 0); }
+  height: $header-height;
+  padding: $header-padding;
+  width:99%;
 
-  ul { 
-    @include horizontal-list;
-    @include float-right;
+  nav {
+    height: $nav-height - 1 * $nav-padding;
+    padding: $nav-padding;
+    width: auto;
 
-    height: $nav-height;
+    ul { 
+      @include horizontal-list;
+      @include float-right;
+      height: inherit;
+
+      li {
+        @include float-left;
+        width: $nav-item-width;
+
+        a {
+          text-decoration:none;
+          color: $nav-item-color;
+
+          &:hover {
+            color: $nav-item-hover-color;
+          }
+        }
+      }
+    }
+  }
+  .logo {
+    @include span-columns($logo-size);
+    padding: $logo-padding;
   }
 }
 
 article#content{
-  // @include span-columns($content-size omega);
-
   // dodaje wymagany odstep wielkosc headera
   @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
 
