@@ -1,0 +1,30 @@
+// ### Zmienne od wyglądu strony(kolory itd.) ###
+
+// Kolory:
+$green:#008000;
+$white:#fff;
+
+// Header:
+
+$header-color: rgba(255,255,255,0.75);
+$header-opacity: 0.8;
+
+// Logo:
+
+$logo-color: #252525;
+$logo-font: "Daniel";
+$logo-font-size: 20px;
+$logo-spacing:0px;
+
+// Navigation:
+
+$nav-item-color: lighten(#252525, 5%);
+$nav-item-hover-color: lighten($nav-item-color, 20%);
+$nav-item-highlight-color: $green;
+
+// Aside:
+
+$aside-border-radius: 4px;
+$aside-color: $white;
+$aside-font: "Kobe";
+$aside-opacity: 0.8;

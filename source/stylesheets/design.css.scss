@@ -1,0 +1,30 @@
+#header {
+  @include opacity($header-opacity);
+  background-color: $header-color;
+
+  nav a{
+    text-shadow: none;
+
+    &:hover {
+      color: gray;
+    }  
+  }
+}
+
+.logo {
+  @include font($logo-font, $logo-spacing);
+  font-size: $logo-font-size;
+  
+  a {
+    color: $logo-color;
+    text-decoration:none;
+  }
+}
+
+
+#sidebar{
+  @include border-radius($aside-border-radius);
+  @include font($aside-font);
+  background-color: $aside-color;
+  opacity: $aside-opacity;
+}
