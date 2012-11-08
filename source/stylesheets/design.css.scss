@@ -1,5 +1,5 @@
 body {
-  background:url('http://25.media.tumblr.com/tumblr_mcegmn8T7a1rf8atuo1_1280.jpg') no-repeat;
+  background:url($background-image) no-repeat;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;

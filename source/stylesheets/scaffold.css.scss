@@ -79,7 +79,9 @@ aside#sidebar {
 #gallery {
   @include span-columns(6 omega);
   @include box-sizing(border-box);
-
+  img {
+    width:100%;
+  }
 }
 
 #content{
