@@ -1,5 +1,6 @@
 structures:
   about: true
+  gallery: true
 
 # background_image: 'http://www.yfke.tv/media/image/resized/e041ebcfe4130298_1920x1200.jpg'
 background_image: 'http://25.media.tumblr.com/tumblr_mcegmn8T7a1rf8atuo1_1280.jpg'

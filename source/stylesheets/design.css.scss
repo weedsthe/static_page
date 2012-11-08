@@ -8,14 +8,14 @@
 
     &:hover {
       color: gray;
-    }  
+    }
   }
 }
 
 .logo {
   @include font($logo-font, $logo-spacing);
   font-size: $logo-font-size;
-  
+
   a {
     color: $logo-color;
     text-decoration:none;
@@ -28,4 +28,12 @@
   @include font($aside-font);
   background-color: $aside-color;
   opacity: $aside-opacity;
+}
+
+#gallery{
+  @include border-radius($gallery-border-radius);
+  @include font($gallery-font);
+  @include span-columns(7);
+  background-color: $gallery-color;
+  opacity: $gallery-opacity;
 }
