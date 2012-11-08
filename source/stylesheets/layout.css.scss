@@ -13,28 +13,7 @@
 */
 
 @import 'variables';
-
-// Variables
-$header-type: fixed;
-$header-padding: 10px;
-$header-height: 50px;
-$header-size: 12;
-
-$logo-size: 4;
-$logo-padding:15px;
-
-$nav-height: $header-height;
-$nav-padding: 15px;
-$nav-item-width:80px;
-
-$content-padding: 10px;
-$content-size: 12;
-
-$aside-size: 4;
-$aside-height: 200px;
-$aside-padding: 10px;
-
-// Struktura
+@import 'layouts/full-width';
 
 @mixin fixed($position, $offset) {
   position: fixed;
