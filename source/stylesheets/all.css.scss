@@ -19,6 +19,7 @@
 
   nav a{
     text-shadow: none;
+    font-size: $nav-item-font-size;
 
     &:hover {
       color: gray;
