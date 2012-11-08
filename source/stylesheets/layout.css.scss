@@ -15,10 +15,6 @@
 @import 'variables';
 @import 'layouts/full-width';
 
-@mixin fixed($position, $offset) {
-  position: fixed;
-  #{$position}: $offset;
-}
 
 body {
   height:100%;
