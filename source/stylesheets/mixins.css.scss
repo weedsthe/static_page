@@ -2,3 +2,8 @@
   font-family:$font-name, sans-serif, Arial;
   letter-spacing: $space;
 }
+
+@mixin fixed($position, $offset) {
+  position: fixed;
+  #{$position}: $offset;
+}

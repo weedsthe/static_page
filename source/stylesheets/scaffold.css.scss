@@ -42,12 +42,13 @@ img#background{
 }
 
 #header {
-  width:99%;
+  @include box-sizing(border-box);
+  width:100%;
   border-bottom:1px solid rgba(50,50,50,0.15);
+
   
   @if $header-type == fixed { @include fixed(top, 0); }
   height: $header-height;
-  padding: $header-padding;
   
   .logo {
     @include span-columns($logo-size);

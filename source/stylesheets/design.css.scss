@@ -1,3 +1,10 @@
+body {
+  background:url('http://25.media.tumblr.com/tumblr_mcegmn8T7a1rf8atuo1_1280.jpg') no-repeat;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
 #header {
   background-color: $header-color;
 
@@ -38,7 +45,7 @@
 #gallery{
   @include border-radius($gallery-border-radius);
   @include font($gallery-font);
-  @include span-columns(7);
+  @include span-columns(8 omega);
   background-color: $gallery-color;
   opacity: $gallery-opacity;
 }
