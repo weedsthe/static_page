@@ -2,9 +2,11 @@
 @import 'variables/defaults';
 
 @import 'compass';
+@import 'compass/reset';
 @import 'susy';
 @import 'scaffold';
 @import 'fonts';
+
 
 @import 'mixins';
 @import 'design';

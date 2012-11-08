@@ -13,15 +13,12 @@
 */
 
 @mixin fixed($position, $offset) {
-  position: fixed;
-  #{$position}: $offset;
+  // position: fixed;
+  // #{$position}: $offset;
 }
 
-body {
-  height:100%;
-  margin:0;
-  position:absolute;
-  overflow:auto;
+.page {
+  @include container;
 }
 
 /* http://css-tricks.com/perfect-full-page-background-image/ */
@@ -42,7 +39,6 @@ img#background{
 }
 
 #header {
-  width:99%;
   border-bottom:1px solid rgba(50,50,50,0.15);
   
   @if $header-type == fixed { @include fixed(top, 0); }
@@ -57,7 +53,6 @@ img#background{
   nav {
     height: $nav-height - 1 * $nav-padding;
     padding: $nav-padding;
-    width: auto;
 
     ul { 
       @include horizontal-list;
@@ -65,7 +60,6 @@ img#background{
       height: inherit;
 
       li {
-        @include float-left;
         width: $nav-item-width;
         a {
           padding:2px;
