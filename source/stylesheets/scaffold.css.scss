@@ -44,7 +44,7 @@ img#background{
 
   @if $header-type == fixed { @include fixed(top, 0); }
   height: $header-height;
-  
+
   .logo {
     @include span-columns($logo-size);
     padding: $logo-padding;
@@ -54,7 +54,7 @@ img#background{
     height: $nav-height - 1 * $nav-padding;
     padding: $nav-padding;
 
-    ul { 
+    ul {
       @include horizontal-list;
       @include float-right;
       height: inherit;
@@ -71,8 +71,15 @@ img#background{
 
 aside#sidebar {
   @include span-columns($aside-size);
+  @include box-sizing(border-box);
   min-height: $aside-height;
-  padding: $aside-padding;
+  padding:$aside-padding;
+}
+
+#gallery {
+  @include span-columns(6 omega);
+  @include box-sizing(border-box);
+
 }
 
 #content{

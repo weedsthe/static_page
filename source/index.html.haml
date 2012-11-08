@@ -1,12 +1,8 @@
 - if data.body.structures.about
   %aside#sidebar
-    = data.body.about.text
+    %p
+      = data.body.about.text
 
 - if data.body.structures.gallery
   #gallery
-    .blueberry
-      %ul.slides
-        %li
-          %img{:src => "http://27.media.tumblr.com/tumblr_lzxd6rcfgQ1qc39i3o1_500.png"}/
-        %li
-          %img{:src => "http://27.media.tumblr.com/tumblr_lzxd6rcfgQ1qc39i3o1_500.png"}/
+    %img{:src => "http://placehold.it/600x300"}/

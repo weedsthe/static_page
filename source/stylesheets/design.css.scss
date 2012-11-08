@@ -45,7 +45,6 @@ body {
 #gallery{
   @include border-radius($gallery-border-radius);
   @include font($gallery-font);
-  @include span-columns(8 omega);
   background-color: $gallery-color;
   opacity: $gallery-opacity;
 }

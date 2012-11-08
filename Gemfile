@@ -7,4 +7,4 @@ gem 'susy', "~>1.0.1"
 
 gem 'haml'
 gem 'pry'
-gem 'jquery-sprockets', :git => 'git://github.com/johnbintz/jquery-sprockets.git'
+# gem 'jquery-sprockets', :git => 'git://github.com/johnbintz/jquery-sprockets.git'
