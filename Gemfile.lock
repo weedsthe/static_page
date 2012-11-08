@@ -1,3 +1,9 @@
+GIT
+  remote: git://github.com/johnbintz/jquery-sprockets.git
+  revision: 460e129d11eabc13e8cc6b6ab85c421764fd59e4
+  specs:
+    jquery-sprockets (0.0.1)
+
 GEM
   remote: http://rubygems.org/
   specs:
@@ -123,6 +129,7 @@ PLATFORMS
 
 DEPENDENCIES
   haml
+  jquery-sprockets!
   middleman (~> 3.0.6)
   middleman-livereload
   pry
