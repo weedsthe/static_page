@@ -30,9 +30,9 @@ $nav-item-width:80px;
 $content-padding: 10px;
 $content-size: 12;
 
-$about-size: 4;
-$about-height: 200px;
-$about-padding: 10px;
+$aside-size: 4;
+$aside-height: 200px;
+$aside-padding: 10px;
 
 // Struktura
 
@@ -67,7 +67,7 @@ img#background{
 
 #header {
   width:99%;
-  border-bottom:1px solid rgba(50,50,50,0.25);
+  border-bottom:1px solid rgba(50,50,50,0.15);
   
   @if $header-type == fixed { @include fixed(top, 0); }
   height: $header-height;
@@ -108,11 +108,10 @@ img#background{
   }
 }
 
-aside#about {
-  @include span-columns($about-size);
-
-  min-height: $about-height;
-  padding: $about-padding;
+aside#sidebar {
+  @include span-columns($aside-size);
+  min-height: $aside-height;
+  padding: $aside-padding;
 }
 
 #content{

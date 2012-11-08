@@ -1,9 +1,8 @@
 // ### Zmienne od wyglądu strony(kolory itd.) ###
 
 // Kolory:
-$white:#fff;
 $green:#008000;
-
+$white:#fff;
 
 // Header:
 
@@ -25,4 +24,7 @@ $nav-item-highlight-color: $green;
 
 // Aside:
 
-$about-color: $white;
+$aside-border-radius: 4px;
+$aside-color: $white;
+$aside-font: "Kobe";
+$aside-opacity: 0.8;
