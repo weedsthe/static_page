@@ -1,13 +1,18 @@
 #header {
-  @include opacity($header-opacity);
   background-color: $header-color;
 
-  nav a{
-    text-shadow: none;
-    font-size:$nav-item-font-size;
-
-    &:hover {
-      color: gray;
+  nav li {
+    text-align:center;
+    a{
+      border-left:4px solid rgba(255,255,255,0);
+      color: $nav-item-color;
+      font-size:$nav-item-font-size;
+      text-decoration:none;
+      text-shadow: none;
+      &:hover {
+        border-left:4px solid $nav-item-highlight-color;
+        color: darken($nav-item-color, 10%);
+      }
     }
   }
 }

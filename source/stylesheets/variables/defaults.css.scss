@@ -7,7 +7,6 @@ $white:#fff;
 // Header:
 
 $header-color: rgba(255,255,255,0.75);
-$header-opacity: 0.8;
 
 // Logo:
 
@@ -18,10 +17,10 @@ $logo-spacing:0px;
 
 // Navigation:
 
-$nav-item-color: lighten(#252525, 5%);
-$nav-item-hover-color: lighten($nav-item-color, 20%);
+$nav-item-color: lighten(#252525, 25%);
 $nav-item-highlight-color: $green;
 $nav-item-font-size:24px;
+$nav-item-font:"Overlock";
 
 // Aside:
 

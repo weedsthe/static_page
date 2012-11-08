@@ -1,6 +1,7 @@
 // ### Zmienne od wyglądu strony(kolory itd.) ###
 
 // Kolory:
+$black:#a2a2a2;
 $green:#008000;
 $white:#fff;
 
@@ -18,10 +19,10 @@ $logo-spacing:0px;
 
 // Navigation:
 
-$nav-item-color: lighten(#252525, 5%);
-$nav-item-hover-color: lighten($nav-item-color, 20%);
+$nav-item-color: lighten(#252525, 20%);
 $nav-item-highlight-color: $green;
 $nav-item-font-size:24px;
+$nav-item-font:"Overlock";
 
 // Aside:
 

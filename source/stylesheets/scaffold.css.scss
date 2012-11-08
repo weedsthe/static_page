@@ -67,17 +67,8 @@ img#background{
       li {
         @include float-left;
         width: $nav-item-width;
-        text-align:center;
-
         a {
-          border-left:4px solid rgba(255,255,255,0);
-          color: $nav-item-color;
           padding:2px;
-          text-decoration:none;
-          &:hover {
-            border-left:4px solid $nav-item-highlight-color;
-            color: $nav-item-hover-color;
-          }
         }
       }
     }
