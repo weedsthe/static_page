@@ -2,8 +2,8 @@ logo: YOU ARE YOUR CHOICES
 
 navigation:
   - name : 'portfolio'
-  - name : 'galeria'
   - name : 'blog'
+  - name : 'galeria'
   
 # invoice: 34843
 

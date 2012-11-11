@@ -16,12 +16,13 @@ $header-size: 12;
 
 //Logo:
 $logo-size: 4;
-$logo-padding:15px;
+$logo-padding:5px;
 
-//Nav:
+//Navigation:
 $nav-height: $header-height;
-$nav-padding: 8px;
-$nav-item-width:120px;
+$nav-padding: 0px;
+$nav-item-width:100px;
+$nav-item-margin:0 10px;
 
 //Content:
 $content-padding: 10px;

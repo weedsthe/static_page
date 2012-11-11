@@ -25,17 +25,22 @@ body {
   background-color: $header-background;
 
   nav li {
+    @include box-sizing(border-box);
+    @include transition(border-color 0.3s linear);
     text-align:center;
-    a{
-      border-left:4px solid rgba(255,255,255,0);
+    border-color:transparent;
+
+    &:hover {
+      border-bottom:4px solid $nav-item-highlight-color;
+      color: darken($nav-item-color, 20%);
+    }
+
+    a {
+      @include font($nav-item-font);
       color: $nav-item-color;
       font-size:$nav-item-font-size;
       text-decoration:none;
       text-shadow: none;
-      &:hover {
-        border-left:4px solid $nav-item-highlight-color;
-        color: darken($nav-item-color, 10%);
-      }
     }
   }
 }
