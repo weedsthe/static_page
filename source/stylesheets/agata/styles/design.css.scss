@@ -30,17 +30,20 @@ body {
     text-align:center;
     border-color:transparent;
 
-    &:hover {
-      border-bottom:4px solid $nav-item-highlight-color;
-      color: darken($nav-item-color, 20%);
-    }
-
     a {
+      @include transition(color 0.3s linear);
       @include font($nav-item-font);
       color: $nav-item-color;
       font-size:$nav-item-font-size;
       text-decoration:none;
       text-shadow: none;
+    }
+
+    &:hover {
+      border-bottom:2px solid $nav-item-highlight-color;
+      & > a {
+        color: $hotpink;
+      }
     }
   }
 }
@@ -48,6 +51,8 @@ body {
 .logo {
   @include font($logo-font, $logo-spacing);
   font-size: $logo-font-size;
+  background: $logo-background;
+  text-align: center;
 
   a {
     color: $logo-color;

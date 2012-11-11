@@ -16,10 +16,12 @@
 
 .page {
   @include container;
+  width:100%;
 }
 
 #header {
-  @include box-sizing(border-box);
+  @include box-sizing (border-box);
+  @include span-columns ($header-size);
   border-bottom:1px solid rgba(50,50,50,0.15);
   
   @if $header-type == fixed { @include fixed(top, 0); }
@@ -27,8 +29,12 @@
   padding: $header-padding;
   
   .logo {
+    @include fixed(top, 0);
     @include span-columns($logo-size);
+    @include box-sizing (border-box);
+    @include border-radius (8px);
     padding: $logo-padding;
+    height: $logo-height;
   }
 
   nav {
@@ -43,7 +49,7 @@
       li {
         width: $nav-item-width;
         margin: $nav-item-margin;
-        padding: 0 0 11px 0;
+        padding: 0 0 13px 0;
       }
     }
   }
@@ -65,7 +71,9 @@ aside#sidebar {
 }
 
 #content{
-  // dodaje wymagany odstep wielkosc headera
-  @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
+  margin-top:10px;
   padding: $content-padding;
+  // dodaje wymagany odstep wielkosc headera
+  @if $logo-type == fixed { margin-top: $logo-height / 2 ; }
+  @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
 }

@@ -3,7 +3,8 @@
 // Kolory:
 $green:#008000;
 $white:#fff;
-$hotpink: rgba(255,0,102,0.6);
+$hotpink: rgba(255,0,102,0.5);
+$rose: rgba(247,145,163,0.75);
 
 //Body:
 $background-image: "http://25.media.tumblr.com/tumblr_mcegmn8T7a1rf8atuo1_1280.jpg";
@@ -15,13 +16,14 @@ $header-background: rgba(255,255,255,0.66);
 
 $logo-color: #252525;
 $logo-font: "Angelina";
-$logo-font-size: 20px;
+$logo-font-size: 28px;
 $logo-spacing:0px;
+$logo-background: $header-background;
 
 // Navigation:
 
 $nav-item-color: lighten(#252525, 25%);
-$nav-item-highlight-color: $hotpink;
+$nav-item-highlight-color: $rose;
 $nav-item-font-size:24px;
 $nav-item-font:"Shadows";
 
