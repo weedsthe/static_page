@@ -11,7 +11,7 @@
 
 @font-face {
   font-family:"Angelina";
-  src: url('fonts/calligraphic/angelina.ttf')
+  src: url('../fonts/calligraphic/angelina.ttf')
   format('truetype')
 }
 
@@ -19,7 +19,7 @@
 
 @font-face {
   font-family:"Windsong";
-  src: url('fonts/calligraphic/Windsong.ttf')
+  src: url('../fonts/calligraphic/Windsong.ttf')
   format('truetype')
 }
 
@@ -27,7 +27,7 @@
 
 @font-face {
   font-family:"Daniel";
-  src: url('fonts/calligraphic/daniel.ttf')
+  src: url('../fonts/calligraphic/daniel.ttf')
   format('truetype')
 }
 
@@ -35,7 +35,7 @@
 
 @font-face {
   font-family:"Journal";
-  src: url('fonts/calligraphic/journal.ttf')
+  src: url('../fonts/calligraphic/journal.ttf')
   format('truetype')
 }
 
@@ -43,7 +43,7 @@
 
 @font-face {
   font-family:"Tangerine";
-  src: url('fonts/calligraphic/Tangerine_Regular.ttf')
+  src: url('../fonts/calligraphic/Tangerine_Regular.ttf')
   format('truetype')
 }
 
@@ -51,7 +51,7 @@
 
 @font-face {
   font-family:"Alex";
-  src: url('fonts/calligraphic/AlexBrush-Regular-OTF.otf')
+  src: url('../fonts/calligraphic/AlexBrush-Regular-OTF.otf')
   format('opentype')
 }
 
@@ -63,7 +63,7 @@
 
 @font-face {
   font-family:"Kobe";
-  src: url('fonts/regular/AverageSans-Regular.ttf')
+  src: url('../fonts/regular/AverageSans-Regular.ttf')
   format('truetype')
 }
 
@@ -71,7 +71,7 @@
 
 @font-face {
   font-family:"Grace";
-  src: url('fonts/regular/CoveredByYourGrace.ttf')
+  src: url('../fonts/regular/CoveredByYourGrace.ttf')
   format('truetype')
 }
 
@@ -79,7 +79,7 @@
 
 @font-face {
   font-family:"Junge";
-  src: url('fonts/regular/Junge-Regular.ttf')
+  src: url('../fonts/regular/Junge-Regular.ttf')
   format('truetype')
 }
 
@@ -87,7 +87,7 @@
 
 @font-face {
   font-family:"Kite";
-  src: url('fonts/regular/KiteOne-Regular.ttf')
+  src: url('../fonts/regular/KiteOne-Regular.ttf')
   format('truetype')
 }
 
@@ -95,7 +95,7 @@
 
 @font-face {
   font-family:"Nova";
-  src: url('fonts/regular/NovaSlim.ttf')
+  src: url('../fonts/regular/NovaSlim.ttf')
   format('truetype')
 }
 
@@ -103,7 +103,7 @@
 
 @font-face {
   font-family:"Overlock";
-  src: url('fonts/regular/Overlock-Regular.ttf')
+  src: url('../fonts/regular/Overlock-Regular.ttf')
   format('truetype')
 }
 
@@ -111,7 +111,7 @@
 
 @font-face {
   font-family:"Quando";
-  src: url('fonts/regular/Quando-Regular.ttf')
+  src: url('../fonts/regular/Quando-Regular.ttf')
   format('truetype')
 }
 
@@ -119,7 +119,7 @@
 
 @font-face {
   font-family:"Quicksand";
-  src: url('fonts/regular/Quicksand-Regular.ttf')
+  src: url('../fonts/regular/Quicksand-Regular.ttf')
   format('truetype')
 }
 
@@ -127,6 +127,6 @@
 
 @font-face {
   font-family:"Shadows";
-  src: url('fonts/regular/ShadowsIntoLightTwo-Regular.ttf')
+  src: url('../fonts/regular/ShadowsIntoLightTwo-Regular.ttf')
   format('truetype')
 }

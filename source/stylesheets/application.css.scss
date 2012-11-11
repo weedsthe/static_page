@@ -1,12 +1,9 @@
-@import 'layouts/full-width';
-@import 'variables/defaults';
-
 @import 'compass';
 @import 'compass/reset';
 @import 'susy';
-@import 'scaffold';
+
 @import 'fonts';
-
-
 @import 'mixins';
-@import 'design';
+
+@import 'agata/styles/layout';
+@import 'agata/styles/design';
