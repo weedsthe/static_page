@@ -1,0 +1,37 @@
+// ### Zmienne od wyglądu strony(kolory itd.) ###
+
+// Kolory:
+$green:#008000;
+$white:#fff;
+$hotpink: rgba(255,0,102,0.75);
+
+// Header:
+$header-background: rgba(255,255,255,0.66);
+
+// Logo:
+
+$logo-color: #252525;
+$logo-font: "Angelina";
+$logo-font-size: 20px;
+$logo-spacing:0px;
+
+// Navigation:
+
+$nav-item-color: lighten(#252525, 25%);
+$nav-item-highlight-color: $hotpink;
+$nav-item-font-size:24px;
+$nav-item-font:"Overlock";
+
+// Aside:
+
+$aside-border-radius: 4px;
+$aside-background: rgba(255,255,255,0.66);
+$aside-font: "Kite";
+
+// Gallery
+
+$gallery-border-radius: 4px;
+$gallery-color: $white;
+$gallery-font: "Kite";
+$gallery-opacity: 1;
+$gallery-margin: 12px;
