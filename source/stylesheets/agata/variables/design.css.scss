@@ -1,9 +1,12 @@
-// ### Zmienne od wyglądu strony(kolory itd.) ###
+// ### Zmienne od wyglądu strony(kolory, czcionki itd.) ###
 
 // Kolory:
 $green:#008000;
 $white:#fff;
 $hotpink: rgba(255,0,102,0.75);
+
+//Body:
+$background-image: "http://25.media.tumblr.com/tumblr_mcegmn8T7a1rf8atuo1_1280.jpg";
 
 // Header:
 $header-background: rgba(255,255,255,0.66);
@@ -33,5 +36,4 @@ $aside-font: "Kite";
 $gallery-border-radius: 4px;
 $gallery-color: $white;
 $gallery-font: "Kite";
-$gallery-opacity: 1;
 $gallery-margin: 12px;

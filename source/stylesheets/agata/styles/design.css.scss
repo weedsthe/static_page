@@ -1,3 +1,17 @@
+/* Konwencja
+  Ten plik zawiera opis wygladu elementow na stronie
+
+  @dozwolone atrybuty css:
+    - background, text-align, border, color, font-size, text-decoration, text-shadow, border-radius, box-shadow, opacity, outline
+
+  @dozwolone mixiny:
+    - kazdy ktory wykorzystuje dozwolone atrybuty oraz
+    - font
+
+  @slownik:
+   
+*/
+
 @import 'agata/variables/design';
 
 body {
@@ -47,5 +61,4 @@ body {
   @include border-radius($gallery-border-radius);
   @include font($gallery-font);
   background-color: $gallery-color;
-  opacity: $gallery-opacity;
 }
