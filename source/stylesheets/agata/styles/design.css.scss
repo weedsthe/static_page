@@ -52,11 +52,14 @@ body {
   @include font($logo-font, $logo-spacing);
   font-size: $logo-font-size;
   background: $logo-background;
-  text-align: center;
+  text-align: left;
 
   a {
     color: $logo-color;
     text-decoration:none;
+    & > span:first-child {
+      color: $hotpink;
+    }
   }
 }
 

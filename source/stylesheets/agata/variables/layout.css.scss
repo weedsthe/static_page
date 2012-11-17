@@ -8,6 +8,9 @@ $grid-padding: 0;
 
 $container-width: 100%;
 
+//Body:
+$body-margin: 5%;
+
 //Header:
 $header-type: fixed;
 $header-padding: 10px;
@@ -17,14 +20,14 @@ $header-size: 10;
 //Logo:
 $logo-type: fixed;
 $logo-size: 3;
-$logo-padding: 20px 0;
-$logo-height: 70px;
+$logo-padding: 10px 0;
+$logo-height: 49px;
 
 //Navigation:
 $nav-height: $header-height;
 $nav-padding: 0px;
 $nav-item-width:100px;
-$nav-item-margin:0 10px;
+$nav-item-margin:0 0 0 10px;
 
 //Content:
 $content-padding: 10px;

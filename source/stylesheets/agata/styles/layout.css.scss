@@ -33,12 +33,14 @@
     @include span-columns($logo-size);
     @include box-sizing (border-box);
     @include border-radius (8px);
-    padding: $logo-padding;
     height: $logo-height;
+    margin: 0 $body-margin;
+    padding: $logo-padding;
   }
 
   nav {
     height: $nav-height - 1 * $nav-padding;
+    margin: 0 $body-margin;
     padding: $nav-padding;
 
     ul { 
@@ -71,8 +73,9 @@ aside#sidebar {
 }
 
 #content{
-  margin-top:10px;
   padding: $content-padding;
+  margin:0 $body-margin;
+  margin-top:10px;
   // dodaje wymagany odstep wielkosc headera
   @if $logo-type == fixed { margin-top: $logo-height / 2 ; }
   @if $header-type == fixed { margin-top: $header-height + 2 * $header-padding; }
