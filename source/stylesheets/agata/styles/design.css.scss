@@ -57,8 +57,15 @@ body {
   a {
     color: $logo-color;
     text-decoration:none;
-    & > span:first-child {
-      color: $hotpink;
+    & > span {
+      @include transition(color 0.3s linear);
+
+      &:first-child {
+        color:$hotpink;
+      }
+      &:last-child:hover {
+        color: $hotpink;
+      }
     }
   }
 }

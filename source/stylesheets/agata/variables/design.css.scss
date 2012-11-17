@@ -10,7 +10,7 @@ $rose: rgba(247,145,163,0.75);
 $background-image: "http://25.media.tumblr.com/tumblr_mcegmn8T7a1rf8atuo1_1280.jpg";
 
 // Header:
-$header-background: rgba(255,255,255,0.66);
+$header-background: rgba(255,255,255,0.5);
 
 // Logo:
 
@@ -18,7 +18,7 @@ $logo-color: #252525;
 $logo-font: "Journal";
 $logo-font-size: 28px;
 $logo-spacing:0px;
-$logo-background: $header-background;
+$logo-background: transparent;
 
 // Navigation:
 
@@ -30,7 +30,7 @@ $nav-item-font:"Shadows";
 // Aside:
 
 $aside-border-radius: 4px;
-$aside-background: rgba(255,255,255,0.66);
+$aside-background: rgba(255,255,255,0.5);
 $aside-font: "Kite";
 
 // Gallery
