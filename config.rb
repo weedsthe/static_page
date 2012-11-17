@@ -56,9 +56,10 @@ set :images_dir, 'images'
 helpers do
   def header(data)
     links = data.header.navigation
-    logo  = data.header.logo
+    logo_foreword  = data.header.logo_foreword
+    logo_text = data.header.logo_text
 
-    partial("header", :locals => {:logo => logo,:links => links})
+    partial("header", :locals => {:logo_foreword => logo_foreword, :logo_text => logo_text, :links => links})
   end
 end
 

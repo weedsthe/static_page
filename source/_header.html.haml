@@ -1,6 +1,8 @@
 #header
   .logo
-    %a(href="#")= logo
+    %a(href="#")
+      %span= logo_foreword
+      %span= logo_text
   %nav
     %ul
       - links.each do |link|
